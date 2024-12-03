@@ -1,0 +1,125 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:linear-gradient(to right,violet,blue);
+    margin: 0;
+    background-image: url("./needs/photo-1606176952697-4f2b8851d801.avif");
+    background-size: cover;
+}
+.image{
+    float:right;
+    position:absolute;
+    right:3%;
+
+}
+.image img{
+    clip-path: polygon(41% 0, 41% 14%, 100% 14%, 100% 49%, 41% 49%, 41% 63%, 1% 30%);
+    float: left;
+    margin-left: -200px;
+    border-color: white;
+    width:500px;
+    height:350px;
+
+
+}
+.image img:hover{
+    transform:translateX(-30px);
+    transition-duration: 2s;
+}
+.main_image{
+    position: absolute;
+    left:0%;
+    top:30%;
+    clip-path: circle(50% at 50% 50%);
+
+    width:600px;
+    height:300px;
+    
+}
+.main_image:hover{
+    transform:rotate(360deg);
+    transition-duration: 2s;
+}
+.container {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background:white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: 2px solid;
+    
+}
+.container:hover{
+    background:linear-gradient(to right,violet,indigo);
+}
+h1{
+    font-style: italic;
+    font-family: Georgia;
+}
+h1:hover{
+    color:beige;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+.input-section:hover{
+    color:white;
+}
+input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+    
+}
+
+.slot-column {
+    border: 1px solid #ddd;
+    padding: 10px 0px;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    animation-name: spin;
+
+}
+
+.slot-column p {
+    margin: 0;
+    width: 2vw;
+    font-size: 24px;
+    line-height: 1.5;
+    /* background-color: #0056b3; */
+}
+.slot-column p:nth-child(2){
+    background-color: #0056b3;
+}
+@keyframes spin {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-500%);
+    }
+}
